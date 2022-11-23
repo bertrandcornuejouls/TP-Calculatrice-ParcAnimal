@@ -5,25 +5,20 @@ import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
 
 
 public class Main extends Application {
-
 
 	
 	@Override
 	public void start(Stage primaryStage) {
 		try {
 			
-			
-			
-			Parent rootFXML = FXMLLoader.load(getClass().getResource("VueParc.fxml"));
+			Parent rootFXML = FXMLLoader.load(getClass().getResource("VueCalculatrice.fxml"));
 			Scene sceneFXML = new Scene(rootFXML);
 			
 			//titre de l'application
-			primaryStage.setTitle("ParcAnimalier");
+			primaryStage.setTitle("Calculatrice");
 			
 			
 			//Attribut la composition de ma fenetre à ma fenetre principale
@@ -40,5 +35,5 @@ public class Main extends Application {
 	
 	public static void main(String[] args){
 		launch(args);
-	}	
+	}
 }
